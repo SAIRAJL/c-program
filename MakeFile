@@ -1,0 +1,12 @@
+#Target_name:Dependencies
+#<TAB>Commands
+SRC=main.c cube.c
+INC =head.h
+target: $(SRC) $(INC)
+	gcc $(SRC) -o a.exe
+
+run:target
+	./a.exe	
+
+clean:
+	rm a.exe	
